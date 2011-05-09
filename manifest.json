@@ -3,14 +3,14 @@
   "version": "0.1",
   "description": "Sorts Facebook group feed in chronological order",
   "permissions": [
-    "http://www.facebook.com/*"
+    "http://www.facebook.com/*", "https://www.facebook.com/*"
   ],
   "icons": {
     "48" : "icon.png"
   },
   "content_scripts": [
     {
-      "matches": ["http://www.facebook.com/*"],
+      "matches": ["http://www.facebook.com/*", "https://www.facebook.com/*"],
       "js" : ["chrono.js"]
     }
   ]
